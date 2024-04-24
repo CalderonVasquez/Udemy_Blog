@@ -1,0 +1,17 @@
+/* reset code and common code starts here  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  outline: 0;
+  font-weight: 400;
+}
+
+html {
+  background-color: #fafafa;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
+}
