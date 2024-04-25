@@ -104,7 +104,7 @@ nav li:hover {
 }
 /* Header ends here */
 
-/* Banner starts here */
+/* Banner section starts here */
 #blog-banner-section {
   padding: 5rem 1rem;
   display: flex;
@@ -140,4 +140,4 @@ nav li:hover {
   height: 55ren;
   border: 0.3 solid;
 }
-/* Banner ends here */
+/* Banner section ends here */
