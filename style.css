@@ -82,6 +82,8 @@ header {
 #menu-icon {
   display: none;
 }
+
+
 nav li {
   display: inline-block;
   margin-right: 2rem;
@@ -100,7 +102,42 @@ nav li:hover {
   color: #fff;
   cursor: pointer;
 }
-
-
-
 /* Header ends here */
+
+/* Banner starts here */
+#blog-banner-section {
+  padding: 5rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 95vh;
+}
+
+#blog-banner-section article {
+  flex-basis: 50%;
+  margin: 1rem;
+}
+
+.banner-heading {
+  display: inline-block;
+  padding: 1rem;
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+  background-color: black;
+  color: #fff;
+}
+
+.banner-description {
+  font-size: 1.8rem;
+}
+
+#blog-banner-section aside {
+  flex-basis: 50%;
+  text-align: center;
+}
+.banner-img{
+  width: 55rem;
+  height: 55ren;
+  border: 0.3 solid;
+}
+/* Banner ends here */
