@@ -130,6 +130,51 @@ nav li:hover {
 }
 /* Banner section ends here */
 
+/* Blog-about section starts here */
+#blog-about{
+  background-color: #4c4c4c;
+}
+
+.card-container {
+  display: flex;
+  align-items: center;
+}
+
+.card {
+  flex: 1;
+  border-radius: 0.6rem;
+  background-color: #a09d9d;
+  padding: 3rem 1rem;
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card-header {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.card-description {
+  padding: 0.4rem 0;
+  text-align: justify;
+  font-size: 1.6rem;
+  margin-bottom: 5rem;
+}
+
+.card-btn {
+  width: 80%;
+  align-self: center;
+}
+/* Blog-about section ends here */
+
+
 /* Responsive starts here */
 @media (max-width:992px) {
   #blog-banner-section {
@@ -142,13 +187,21 @@ nav li:hover {
     align-items: center;
     margin-bottom: 5rem;
   }
-}
 
+  .card-container {
+    width: 50%;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
 @media (max-width: 768px) {
   html {
     font-size: 55.5%;
   }
   #blog-banner-section article {
+    width: 80%;
+  }
+  .card-container {
     width: 80%;
   }
 }
@@ -173,6 +226,10 @@ nav li:hover {
   }
   .banner-img {
     max-width: 100%;
+  }
+
+  .card-container {
+    width: 90%;
   }
 }
 /* Responsive ends here */
