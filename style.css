@@ -76,10 +76,39 @@ header {
   background-color: #1913d5;
   border-radius: 0.6rem;
 }
-
 /* Header ends here */
 
 /* Banner section starts here */
+#banner__section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 1rem;
+  min-height: 95vh;
+}
+#banner__section article {
+  flex-basis: 50%;
+  margin: 1rem;
+}
+.banner__heading {
+  font-size: 4rem;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+  background-color: black;
+}
+.banner__description {
+  font-size: 1.8rem;
+}
+#banner__section aside {
+  flex-basis: 50%;
+  text-align: center;
+}
+.banner__img{
+  width: 55rem;
+  height: 55rem;
+  border: 0.3rem solid;
+}
 
 /* Banner section ends here */
 
@@ -109,10 +138,23 @@ header {
   html {
   font-size: 62.5%;
   }
+  #banner__section{
+    flex-direction: column;
+  }
+  #banner__section article {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5rem;
+  }
 }
 @media (max-width: 768px){
   html {
     font-size: 55.5%;
+  }
+  #banner__section article {
+    width: 80%;
   }
 }
 @media (max-width: 600px){
@@ -126,6 +168,15 @@ header {
   flex-direction: column;
   margin-top: 1rem;
   margin-left: 1.5rem;
-}
+  }
+   #banner__section {
+    min-height: auto;
+  }
+   #banner__section article {
+    width: 90%;
+  }
+  .banner__img {
+    max-width: 100%;
+  }
 }
 /* Responsive ends here */
