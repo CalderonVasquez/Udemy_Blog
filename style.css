@@ -40,6 +40,16 @@ body {
   align-items: center;
   justify-content: space-evenly;
 }
+.btn {
+  background-color: rgb(230, 159,8);
+  border: none;
+  border-radius: 0.6rem;
+  box-shadow: 0.1rem 0.1rem 0.1rem #222;
+  cursor: pointer;
+  padding: 1rem 0;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
 /* reset code and common code ends here  */
 
 /* Header starts here */
@@ -109,11 +119,44 @@ header {
   height: 55rem;
   border: 0.3rem solid;
 }
-
 /* Banner section ends here */
 
 /* Blog-about section starts here */
-
+#about__section {
+  background-color: #4c4c4c;
+}
+.about__cards {
+  display: flex;
+  align-items: center;
+}
+.about__card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.6rem;
+  flex: 1;
+  padding: 3rem 1rem;
+  background-color: #a09d9d;
+  margin: 2rem;
+  transition: transform 0.3s;
+}
+.about__card:hover{
+  transform: scale(1.1);
+}
+.card__heading {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.card__description {
+  padding: 0.4rem 0;
+  text-align: justify;
+  font-size: 1.4rem;
+  margin-bottom: 5rem;
+}
+.about__btn {
+  align-self: center;
+  width: 80%;
+}
 /* Blog-about section ends here */
 
 /* archives starts here */
@@ -148,12 +191,20 @@ header {
     align-items: center;
     margin-bottom: 5rem;
   }
+   .about__cards {
+    width: 50%;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }
 @media (max-width: 768px){
   html {
     font-size: 55.5%;
   }
   #banner__section article {
+    width: 80%;
+  }
+  .about__cards {
     width: 80%;
   }
 }
@@ -177,6 +228,9 @@ header {
   }
   .banner__img {
     max-width: 100%;
+  }
+  .about__cards {
+    width: 90%;
   }
 }
 /* Responsive ends here */
