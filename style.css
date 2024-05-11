@@ -275,7 +275,26 @@ textarea {
 /* contact section ends here */
 
 /* footer starts here */
-
+#blog__footer {
+  background-color: black;
+  padding: 1rem;
+  min-height: 5vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__copyright {
+  font-size: 1.5rem;
+}
+.footer__lists {
+  display: flex;
+  gap: 2.5rem;
+}
+.footer__link {
+  font-size: 2.5rem;
+  color: #fff;
+  cursor: pointer;
+}
 /* footer ends here */
 
 
@@ -352,8 +371,23 @@ textarea {
   .blog-post__container {
     width: 90%
   }
+  .form-group{
+    flex-direction: column;
+  }
+  input, textarea {
+    max-width: 100%;
+  }
+  .form-group label {
+    margin-bottom: 0.5rem;
+  }
   #blog-contact__form {
     width: 90%;
+  }
+  footer {
+    flex-direction: column;
+  }
+  .footer__lists {
+    display: flex;
   }
 }
 /* Responsive ends here */
