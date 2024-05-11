@@ -70,21 +70,25 @@ header {
 .logo {
   font-size: 4rem;
 }
-.navbar__lists {
+nav ul {
   display: flex;
-  gap: 2rem;
+  gap: 1.8rem;
 }
-.navbar__list {
+nav li {
   font-size: 1.8rem;
   margin-left: 1.5rem;
   padding: 1rem;
   cursor: pointer;
   transition: all 0.4s;
 }
-
-.navbar__list:hover {
+nav li:hover {
   background-color: #1913d5;
   border-radius: 0.6rem;
+}
+.navbar__link {
+  font-size: 1.8;
+  color: white;
+  cursor: pointer;
 }
 /* Header ends here */
 
@@ -275,7 +279,7 @@ textarea {
 /* contact section ends here */
 
 /* footer starts here */
-#blog__footer {
+footer {
   background-color: black;
   padding: 1rem;
   min-height: 5vh;
@@ -286,14 +290,12 @@ textarea {
 .footer__copyright {
   font-size: 1.5rem;
 }
-.footer__lists {
-  display: flex;
-  gap: 2.5rem;
-}
 .footer__link {
-  font-size: 2.5rem;
   color: #fff;
   cursor: pointer;
+}
+.footer-icon {
+  font-size: 2.5rem;
 }
 /* footer ends here */
 
@@ -386,8 +388,6 @@ textarea {
   footer {
     flex-direction: column;
   }
-  .footer__lists {
-    display: flex;
-  }
+  
 }
 /* Responsive ends here */
