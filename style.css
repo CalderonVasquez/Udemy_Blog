@@ -70,6 +70,9 @@ header {
 .logo {
   font-size: 4rem;
 }
+#menu-icon {
+  display: none;
+}
 nav ul {
   display: flex;
   gap: 1.8rem;
@@ -350,6 +353,15 @@ footer {
   header {
     flex-direction: column;
   }
+  #menu-icon {
+  display: block;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  color: white;
+}
+.hidden {
+  display: none;
+}
   .navbar__lists {
   flex-direction: column;
   margin-top: 1rem;
